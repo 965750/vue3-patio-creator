@@ -1,0 +1,31 @@
+// variables
+
+$primary: #46ef6d;
+$secondary: #24c449;
+$tertiary: #125121;
+
+
+$dark: #e6e6e6;
+$darkest: #d4d4d4;
+
+$fontSmall: 11px;
+$fontMedium: 14px;
+$fontBig: 22px;
+
+$fontHeader: 26px;
+
+// classes
+.bold {
+    font-weight: bold;
+}
+
+.clearMargin {
+    margin: 0px;
+}
+
+.unicon {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
