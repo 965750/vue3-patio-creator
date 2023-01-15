@@ -25,7 +25,7 @@ $fontHeader: 26px;
 
 .unicon {
     text-align: center;
-    display: flex;
+    display: flex !important;
     justify-content: center;
     cursor: pointer;
 }
