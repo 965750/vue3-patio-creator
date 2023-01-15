@@ -1,6 +1,6 @@
 describe('PatioCreator', () => {
     beforeEach(function () {
-      cy.visit('http://localhost:8080/#/patio-creator/new')
+      cy.visit('http://localhost:8080/patio-creator/new')
     })
   
     it(`should NOT save too short project name`, () => {
@@ -18,7 +18,7 @@ describe('PatioCreator', () => {
     it(`should check if user can save project with containing numbers && letters`, () => {
       cy.get('[data-cy-name-input]').type('My Patio11')
       cy.get('[data-cy-save-project-btn]').click()
-      cy.contains('Project Saved')
+      cy.contains('CREATE A NEW PROJECT')
     })
 
     it(`should check if user is redirected to projects list after save`, () => {

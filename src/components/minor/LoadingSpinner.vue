@@ -24,7 +24,7 @@ export default {
     border-top: 8px solid transparent;
     border-radius: 70px;
     animation: spin 1s infinite ease-in-out;
-    
+
     @keyframes spin {
         100% {
             transform: rotate(360deg);

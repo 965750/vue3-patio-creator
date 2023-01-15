@@ -1,7 +1,7 @@
 <template>
     <div class="colorsContainer">
             <ColorBox
-                color="#712f00"
+                color='#712f00'
                 :isActive="('#712f00' === currentDoor.color)"
                 @changeColor="setActiveColor"
             />

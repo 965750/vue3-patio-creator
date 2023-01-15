@@ -15,10 +15,8 @@
 </template>
 
 <script>
-/* eslint-disable */
 import {
-    computed,
-    onMounted
+    computed
 } from "vue"
 import ProjectBox from '@/components/projects/ProjectBox.vue'
 import {
@@ -32,10 +30,6 @@ export default {
     },
     setup() {
         const store = useStore()
-
-        onMounted(() => {
-            store.dispatch('getProjects')
-        })
 
         const savedProjects = computed(() => store.getters['savedProjects'])
 

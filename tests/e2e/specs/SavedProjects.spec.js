@@ -1,6 +1,6 @@
 describe('PatioCreator', () => {
     beforeEach(function () {
-      cy.visit('http://localhost:8080/#/projects')
+      cy.visit('http://localhost:8080/projects')
     })
   
     it(`should check if user can create a project and see it on the list after`, () => {

@@ -104,7 +104,9 @@ export default createStore({
         }
       }
     },
-    async getProjects ({commit, state}) {
+    async getProjects ({commit, state, dispatch}) {
+      dispatch('switchIsLoading', true)
+      
       try {
         const projects = await projectFirestore.collection('savedProjects').get()
         
